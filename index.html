@@ -1,62 +1,374 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./src/output.css">
-  <title>Frontend Mentor | Fylo landing page with two column layout</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <header
+      class="mx-6 mb-[90px] mt-6 flex flex-col items-center gap-[98px] xl:mx-auto xl:mb-[164px] xl:mt-16 xl:max-w-[1280px] xl:gap-[86px]"
+    >
+      <nav class="flex w-full items-center justify-between">
+        <h1 class="w-20 xl:w-[166px]">
+          <img src="./images/logo.svg" alt="logo" class="w-full" />
+        </h1>
 
-  Features
-  Team
-  Sign In
+        <!-- menu -->
+        <ul
+          class="flex items-center gap-6 font-raleway text-xs leading-none text-very-dark-blue xl:text-base"
+        >
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">Features</a>
+          </li>
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">Team</a>
+          </li>
+          <li>
+            <a href="#" class="transition-opacity hover:opacity-70">Sign In</a>
+          </li>
+        </ul>
+        <!-- menu -->
+      </nav>
 
-  All your files in one secure location, accessible anywhere.
+      <!-- hero -->
+      <div
+        class="flex flex-col items-center gap-10 lg:gap-0 xl:max-w-[1280px] xl:flex-row-reverse xl:justify-between"
+      >
+        <!--hero illustration -->
+        <div class="mx-3 min-w-[304px] max-w-[640px] xl:mx-0">
+          <img
+            src="./images/illustration-1.svg"
+            alt="illustration hero"
+            class="w-full"
+          />
+        </div>
+        <!-- hero illustration -->
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+        <!-- hero content -->
+        <div class="text-center text-very-dark-blue xl:text-left">
+          <h2
+            class="mb-6 font-raleway text-2xl font-bold leading-normal lg:text-[40px] xl:mb-4 xl:max-w-[627px]"
+          >
+            All your files in one secure location, accessible anywhere.
+          </h2>
+          <p
+            class="mb-8 font-open-sans text-sm leading-normal xl:mb-[25px] xl:max-w-[585px] xl:pr-3 xl:text-[17px] xl:leading-6 xl:tracking-[0.531px]"
+          >
+            Fylo stores your most important files in one secure location. Access
+            them wherever you need, share and collaborate with friends, family,
+            and co-workers.
+          </p>
 
-  Get Started
+          <form
+            class="mx-auto flex max-w-[304px] flex-col gap-4 font-open-sans xl:mx-0 xl:max-w-[536px] xl:flex-row xl:flex-nowrap"
+            id="form"
+          >
+            <div class="">
+              <input
+                type="text"
+                class="h-10 w-full rounded-md border-[0.625px] border-very-dark-blue pb-3 pl-[21px] pt-[14px] text-xs leading-none tracking-[0.4px] outline-none drop-shadow-drop placeholder:text-light-gray xl:h-[45px] xl:w-[320px] xl:text-sm xl:tracking-[0.467px]"
+                id="email-input"
+                placeholder="Enter your email..."
+              />
+              <p
+                class="mt-2 hidden text-left font-open-sans text-xs leading-none tracking-[0.4px] text-[#EF4877]"
+                id="error-text"
+              >
+                Please check your email
+              </p>
+            </div>
 
-  Stay productive, wherever you are
+            <button
+              type="submit"
+              class="w-full max-w-[304px] self-start rounded-md bg-bright-blue py-[13px] font-raleway text-sm font-bold leading-none text-white drop-shadow-drop transition-colors hover:bg-[#6C9BFF] xl:h-[45px] xl:max-w-[200px] xl:pb-[14px] xl:pt-[15px]"
+            >
+              Get Started
+            </button>
+          </form>
+        </div>
+        <!-- hero content -->
+      </div>
+      <!-- hero -->
+    </header>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+    <main>
+      <!-- background curve -->
+      <div>
+        <picture>
+          <source
+            media="(min-width: 1024px)"
+            srcset="./images/bg-curve-desktop.svg"
+          />
+          <img
+            src="./images/bg-curve-mobile.svg"
+            alt="background curve"
+            class="w-full"
+          />
+        </picture>
+      </div>
+      <!-- background curve -->
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+      <!-- productive section -->
+      <section
+        class="flex flex-col items-center gap-[87px] bg-light-grayish-blue px-5 py-20 xl:flex-row-reverse xl:px-20 xl:pb-[107px]"
+      >
+        <!-- illustration -->
+        <div class="mx-2 min-w-[320px] max-w-[542px] xl:mx-0">
+          <img
+            src="./images/illustration-2.svg"
+            alt="illustration"
+            class="w-full"
+          />
+        </div>
+        <!-- illustration -->
 
-  See how Fylo works
+        <!-- content -->
+        <div class="text-center xl:text-left">
+          <h2
+            class="mb-6 font-raleway font-bold leading-normal text-very-dark-blue xl:mb-[38px] xl:text-[40px]"
+          >
+            Stay productive, wherever you are
+          </h2>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+          <div
+            class="mb-9 flex max-w-[529px] flex-col gap-4 px-4 font-open-sans text-sm leading-normal text-desaturated-blue xl:px-0 xl:text-base"
+          >
+            <p>
+              Never let location be an issue when accessing your files. Fylo has
+              you covered for all of your file storage needs.
+            </p>
+            <p class="pr-4">
+              Securely share files and folders with friends, family and
+              colleagues for live collaboration. No email attachments required!
+            </p>
+          </div>
 
-  Kyle Burton
-  Founder & CEO, Huddle
+          <div
+            class="mx-auto mb-10 flex max-w-[130px] cursor-pointer items-center justify-between border-b-[1px] border-moderate-cyan pb-1 font-open-sans text-xs leading-none text-moderate-cyan transition-colors hover:border-[#71DFCC] hover:text-[#71DFCC] xl:mx-0 xl:mb-11 xl:max-w-[166px] xl:text-base"
+          >
+            <a href="#" class="">See how Fylo works</a>
+            <img
+              src="./images/icon-arrow.svg"
+              alt="icon arrow"
+              class="mt-[2px] size-[14px] xl:size-4"
+            />
+          </div>
 
-  Get early access today
+          <!-- testimonial -->
+          <div
+            class="mx-auto max-w-[280px] rounded-[3.933px] bg-white py-[21.62px] pl-[25.96px] pr-[12.74px] text-left font-open-sans text-very-dark-blue shadow-box-mobile xl:mx-0 xl:max-w-[356px] xl:rounded-[5px] xl:px-[34px] xl:py-[26px] xl:shadow-box-desktop"
+          >
+            <img
+              src="./images/icon-quotes.svg"
+              alt="icon-quotes"
+              class="mb-2 inline-block size-[14px] xl:size-[18px]"
+            />
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+            <p
+              class="mb-3 text-[10px] leading-[18.09px] tracking-[0.385px] xl:mb-4 xl:text-[13px] xl:leading-[23px] xl:tracking-[0.5px]"
+            >
+              Fylo has improved our team productivity by an order of magnitude.
+              Since making the switch our team has become a well-oiled
+              collaboration machine.
+            </p>
 
-  Get Started For Free
+            <div class="flex items-center gap-2">
+              <img
+                src="./images/avatar-testimonial.jpg"
+                alt="avatar testimonial"
+                class="size-6 rounded-full lg:size-8"
+              />
 
-  Phone: +1-543-123-4567
-  example@fylo.com
+              <div class="flex flex-col gap-1">
+                <h3
+                  class="text-[9px] font-bold leading-none tracking-[0.45px] xl:text-[11px] xl:tracking-[0.55px]"
+                >
+                  Kyle Burton
+                </h3>
+                <p
+                  class="text-[6px] leading-[11.798px] tracking-[0.3px] xl:text-[8px] xl:leading-[15px] xl:tracking-[0.4px]"
+                >
+                  Founder & CEO, Huddle
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- testimonial -->
+        </div>
+        <!-- content -->
+      </section>
+      <!-- productive section-->
 
-  About Us
-  Jobs
-  Press
-  Blog
+      <!-- cta section -->
+      <section
+        class="flex flex-col items-center gap-6 bg-desaturated-blue px-12 pb-[71px] pt-[54px] xl:flex-row xl:justify-between xl:gap-0 xl:pb-20 xl:pl-20 xl:pr-[120px] xl:pt-[100px]"
+      >
+        <!-- content -->
+        <div class="max-w-[533px] text-center text-white xl:text-left">
+          <h3
+            class="mb-4 font-raleway text-lg font-bold leading-6 xl:text-[32px] xl:leading-[48px]"
+          >
+            Get early access today
+          </h3>
+          <p
+            class="mb-6 font-open-sans text-sm leading-normal xl:text-base xl:tracking-[0.5px]"
+          >
+            It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.
+          </p>
+        </div>
+        <!-- content -->
 
-  Contact Us
-  Terms
-  Privacy
+        <!-- form -->
+        <form
+          id="form-2"
+          class="flex w-[240px] flex-col gap-2 font-raleway xl:w-[480px] xl:gap-4"
+        >
+          <div>
+            <input
+              type="text"
+              class="w-full rounded-sm pb-[9px] pl-2 pt-[11px] text-[10px] leading-none text-very-dark-blue outline-none drop-shadow-drop placeholder:text-light-gray xl:rounded-md xl:pb-[17px] xl:pl-[22px] xl:pt-[15px] xl:text-xs"
+              id="email-input-2"
+              placeholder="email@example.com"
+            />
+            <p
+              class="mt-1 hidden text-left font-open-sans text-[10px] leading-none tracking-[0.4px] text-[#EF4877] xl:text-xs"
+              id="error-text-2"
+            >
+              Please check your email
+            </p>
+          </div>
 
-  <script src="./src/script.js"></script>
-</body>
+          <button
+            type="submit"
+            class="w-full rounded-sm bg-bright-blue pb-[9px] pt-[11px] text-[10px] font-bold leading-none text-white drop-shadow-drop transition-colors hover:bg-[#6C9BFF] xl:max-w-[200px] xl:rounded-md xl:py-[14px] xl:text-sm"
+          >
+            Get Started
+          </button>
+        </form>
+        <!-- form -->
+      </section>
+      <!-- cta section -->
+    </main>
+
+    <footer
+      class="bg-very-dark-blue px-[39px] pb-[42px] pt-[65px] font-open-sans text-white xl:pb-[86px] xl:pl-20 xl:pr-[262.35px] xl:pt-[92px]"
+    >
+      <!-- logo -->
+      <div class="] mb-8 w-[105px] xl:mb-9 xl:w-[135px]">
+        <img src="./images/logo-white.svg" alt="logo" class="w-full" />
+      </div>
+      <!-- logo -->
+
+      <!-- container -->
+      <div class="flex flex-col gap-8 xl:flex-row xl:justify-between xl:gap-0">
+        <!-- contact  -->
+        <div class="flex flex-col gap-4">
+          <div class="flex items-center gap-4">
+            <img
+              src="./images/icon-phone.svg"
+              alt="icon phone"
+              class="size-6"
+            />
+            <a
+              href="tel:+1-543-123-4567"
+              class="leading-normal transition-colors hover:text-[#6C9BFF]"
+              >Phone: +1-543-123-4567</a
+            >
+          </div>
+
+          <div class="flex items-center gap-4">
+            <img
+              src="./images/icon-email.svg"
+              alt="icon email"
+              class="size-6"
+            />
+            <a
+              href="mailto:example@fylo.com"
+              class="leading-normal transition-colors hover:text-[#6C9BFF]"
+              >example@fylo.com</a
+            >
+          </div>
+        </div>
+        <!-- contact  -->
+
+        <!-- menu -->
+        <ul class="flex flex-col gap-4 leading-none">
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]">Jobs</a>
+          </li>
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]">Press</a>
+          </li>
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]">Blog</a>
+          </li>
+        </ul>
+        <!-- menu -->
+
+        <!-- menu -->
+        <ul class="flex flex-col gap-4 leading-none">
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]"
+              >Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]">Terms</a>
+          </li>
+          <li>
+            <a href="#" class="transition-colors hover:text-[#6C9BFF]"
+              >Privacy</a
+            >
+          </li>
+        </ul>
+        <!-- menu -->
+
+        <!-- socials -->
+        <div
+          class="flex items-center justify-center gap-3 text-xs xl:items-start xl:justify-start xl:text-sm"
+        >
+          <span
+            class="flex size-7 cursor-pointer items-center justify-center rounded-full border border-white transition-colors hover:border-[#6C9BFF] hover:text-[#6C9BFF] xl:size-8"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></span>
+          <span
+            class="flex size-7 cursor-pointer items-center justify-center rounded-full border border-white transition-colors hover:border-[#6C9BFF] hover:text-[#6C9BFF] xl:size-8"
+            ><i class="fa-brands fa-twitter"></i
+          ></span>
+          <span
+            class="flex size-7 cursor-pointer items-center justify-center rounded-full border border-white transition-colors hover:border-[#6C9BFF] hover:text-[#6C9BFF] xl:size-8"
+            ><i class="fa-brands fa-instagram"></i
+          ></span>
+        </div>
+        <!-- socials -->
+      </div>
+      <!-- container -->
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
 </html>

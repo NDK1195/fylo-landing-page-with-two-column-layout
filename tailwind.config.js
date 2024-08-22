@@ -20,7 +20,7 @@ module.exports = {
         "box-desktop": "0px 0px 10px 5px rgba(56, 56, 56, 0.05)",
       },
       dropShadow: {
-        button: "2px 3px 6px rgba(0, 0, 0, 0.16)",
+        drop: "2px 3px 6px rgba(0, 0, 0, 0.16)",
       },
     },
   },
