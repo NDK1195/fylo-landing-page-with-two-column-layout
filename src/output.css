@@ -672,19 +672,9 @@ video {
   display: none;
 }
 
-.size-4{
-  width: 1rem;
-  height: 1rem;
-}
-
 .size-6{
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.size-\[14px\]{
-  width: 14px;
-  height: 14px;
 }
 
 .size-7{
@@ -692,12 +682,9 @@ video {
   height: 1.75rem;
 }
 
-.h-6{
-  height: 1.5rem;
-}
-
-.h-\[30px\]{
-  height: 30px;
+.size-\[14px\]{
+  width: 14px;
+  height: 14px;
 }
 
 .h-10{
@@ -708,16 +695,16 @@ video {
   width: 5rem;
 }
 
+.w-\[105px\]{
+  width: 105px;
+}
+
 .w-\[240px\]{
   width: 240px;
 }
 
 .w-full{
   width: 100%;
-}
-
-.w-\[105px\]{
-  width: 105px;
 }
 
 .min-w-\[304px\]{
@@ -788,6 +775,10 @@ video {
   gap: 0.5rem;
 }
 
+.gap-3{
+  gap: 0.75rem;
+}
+
 .gap-4{
   gap: 1rem;
 }
@@ -796,20 +787,16 @@ video {
   gap: 1.5rem;
 }
 
+.gap-8{
+  gap: 2rem;
+}
+
 .gap-\[87px\]{
   gap: 87px;
 }
 
 .gap-\[98px\]{
   gap: 98px;
-}
-
-.gap-8{
-  gap: 2rem;
-}
-
-.gap-3{
-  gap: 0.75rem;
 }
 
 .self-start{
@@ -832,12 +819,12 @@ video {
   border-radius: 0.125rem;
 }
 
-.border-\[0\.625px\]{
-  border-width: 0.625px;
-}
-
 .border{
   border-width: 1px;
+}
+
+.border-\[0\.625px\]{
+  border-width: 0.625px;
 }
 
 .border-b-\[1px\]{
@@ -859,11 +846,6 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.border-\[\#EF4877\]{
-  --tw-border-opacity: 1;
-  border-color: rgb(239 72 119 / var(--tw-border-opacity));
-}
-
 .bg-bright-blue{
   --tw-bg-opacity: 1;
   background-color: hsl(224 93% 58% / var(--tw-bg-opacity));
@@ -879,14 +861,14 @@ video {
   background-color: hsl(240 75% 98% / var(--tw-bg-opacity));
 }
 
-.bg-white{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 .bg-very-dark-blue{
   --tw-bg-opacity: 1;
   background-color: hsl(243 87% 12% / var(--tw-bg-opacity));
+}
+
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .px-12{
@@ -904,6 +886,11 @@ video {
   padding-right: 1.25rem;
 }
 
+.px-\[39px\]{
+  padding-left: 39px;
+  padding-right: 39px;
+}
+
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -919,22 +906,16 @@ video {
   padding-bottom: 21.62px;
 }
 
-.px-\[39px\]{
-  padding-left: 39px;
-  padding-right: 39px;
-}
-
-.py-\[15px\]{
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 .pb-1{
   padding-bottom: 0.25rem;
 }
 
 .pb-3{
   padding-bottom: 0.75rem;
+}
+
+.pb-\[42px\]{
+  padding-bottom: 42px;
 }
 
 .pb-\[71px\]{
@@ -979,30 +960,6 @@ video {
 
 .pt-\[65px\]{
   padding-top: 65px;
-}
-
-.pb-0{
-  padding-bottom: 0px;
-}
-
-.pb-\[42px\]{
-  padding-bottom: 42px;
-}
-
-.pt-\[13px\]{
-  padding-top: 13px;
-}
-
-.pb-\[11px\]{
-  padding-bottom: 11px;
-}
-
-.pb-\[10px\]{
-  padding-bottom: 10px;
-}
-
-.pt-\[12px\]{
-  padding-top: 12px;
 }
 
 .text-left{
@@ -1156,14 +1113,14 @@ video {
   color: hsl(0 0% 75% / var(--tw-text-opacity));
 }
 
-.hover\:border-\[\#71DFCC\]:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(113 223 204 / var(--tw-border-opacity));
-}
-
 .hover\:border-\[\#6C9BFF\]:hover{
   --tw-border-opacity: 1;
   border-color: rgb(108 155 255 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#71DFCC\]:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(113 223 204 / var(--tw-border-opacity));
 }
 
 .hover\:bg-\[\#6C9BFF\]:hover{
@@ -1171,19 +1128,14 @@ video {
   background-color: rgb(108 155 255 / var(--tw-bg-opacity));
 }
 
-.hover\:text-\[\#71DFCC\]:hover{
-  --tw-text-opacity: 1;
-  color: rgb(113 223 204 / var(--tw-text-opacity));
-}
-
-.hover\:text-desaturated-blue:hover{
-  --tw-text-opacity: 1;
-  color: hsl(238 22% 44% / var(--tw-text-opacity));
-}
-
 .hover\:text-\[\#6C9BFF\]:hover{
   --tw-text-opacity: 1;
   color: rgb(108 155 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#71DFCC\]:hover{
+  --tw-text-opacity: 1;
+  color: rgb(113 223 204 / var(--tw-text-opacity));
 }
 
 .hover\:opacity-70:hover{
@@ -1224,6 +1176,10 @@ video {
     margin-bottom: 1rem;
   }
 
+  .xl\:mb-9{
+    margin-bottom: 2.25rem;
+  }
+
   .xl\:mb-\[164px\]{
     margin-bottom: 164px;
   }
@@ -1240,13 +1196,9 @@ video {
     margin-top: 4rem;
   }
 
-  .xl\:mb-9{
-    margin-bottom: 2.25rem;
-  }
-
-  .xl\:size-\[18px\]{
-    width: 18px;
-    height: 18px;
+  .xl\:size-4{
+    width: 1rem;
+    height: 1rem;
   }
 
   .xl\:size-8{
@@ -1254,21 +1206,17 @@ video {
     height: 2rem;
   }
 
-  .xl\:size-4{
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .xl\:h-\[49px\]{
-    height: 49px;
-  }
-
-  .xl\:h-\[39px\]{
-    height: 39px;
+  .xl\:size-\[18px\]{
+    width: 18px;
+    height: 18px;
   }
 
   .xl\:h-\[45px\]{
     height: 45px;
+  }
+
+  .xl\:w-\[135px\]{
+    width: 135px;
   }
 
   .xl\:w-\[166px\]{
@@ -1283,8 +1231,8 @@ video {
     width: 480px;
   }
 
-  .xl\:w-\[135px\]{
-    width: 135px;
+  .xl\:w-full{
+    width: 100%;
   }
 
   .xl\:max-w-\[1280px\]{
@@ -1374,24 +1322,14 @@ video {
     padding-right: 34px;
   }
 
-  .xl\:py-\[26px\]{
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
-  .xl\:py-4{
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .xl\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-
   .xl\:py-\[14px\]{
     padding-top: 14px;
     padding-bottom: 14px;
+  }
+
+  .xl\:py-\[26px\]{
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 
   .xl\:pb-20{
@@ -1406,8 +1344,20 @@ video {
     padding-bottom: 14px;
   }
 
+  .xl\:pb-\[17px\]{
+    padding-bottom: 17px;
+  }
+
+  .xl\:pb-\[86px\]{
+    padding-bottom: 86px;
+  }
+
   .xl\:pl-20{
     padding-left: 5rem;
+  }
+
+  .xl\:pl-\[22px\]{
+    padding-left: 22px;
   }
 
   .xl\:pr-3{
@@ -1418,6 +1368,10 @@ video {
     padding-right: 120px;
   }
 
+  .xl\:pr-\[262\.35px\]{
+    padding-right: 262.35px;
+  }
+
   .xl\:pt-\[100px\]{
     padding-top: 100px;
   }
@@ -1426,32 +1380,8 @@ video {
     padding-top: 15px;
   }
 
-  .xl\:pb-\[18px\]{
-    padding-bottom: 18px;
-  }
-
-  .xl\:pt-\[16px\]{
-    padding-top: 16px;
-  }
-
-  .xl\:pb-\[17px\]{
-    padding-bottom: 17px;
-  }
-
-  .xl\:pl-\[22px\]{
-    padding-left: 22px;
-  }
-
-  .xl\:pb-\[86px\]{
-    padding-bottom: 86px;
-  }
-
   .xl\:pt-\[92px\]{
     padding-top: 92px;
-  }
-
-  .xl\:pr-\[262\.35px\]{
-    padding-right: 262.35px;
   }
 
   .xl\:text-left{
